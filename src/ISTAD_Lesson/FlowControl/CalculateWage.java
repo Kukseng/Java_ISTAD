@@ -3,6 +3,7 @@ package ISTAD_Lesson.FlowControl;
 import java.util.Scanner;
 
 public class CalculateWage {
+    static final int rate = 4100;
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
@@ -70,12 +71,12 @@ public class CalculateWage {
                             case 1 -> {
                                 System.out.println("Enter reil: ");
                                 riel = input.nextFloat();
-                                System.out.println("Exchange to dollar$: " +riel / 4100);
+                                System.out.println("Exchange to dollar$: " +riel / rate);
                             }
                             case 2 -> {
                                 System.out.println("Enter  riel: ");
                                 dollar = input.nextFloat();
-                                System.out.println("Exchange to riel$: " +dollar / 4100);
+                                System.out.println("Exchange to riel$: " +dollar / rate);
                             }
                             default -> {
                                 System.out.println("Exchange");
