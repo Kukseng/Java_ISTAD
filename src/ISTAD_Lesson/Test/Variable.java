@@ -1,4 +1,4 @@
-package ISTAD_Lesson;
+package ISTAD_Lesson.Test;
 public class Variable {
     public static void main(String[] args) {
         int a =10;

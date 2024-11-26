@@ -2,14 +2,34 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+//        outer:
+//        for (int i = 1; i <= 3; i++) {
+//            for (int j = 1; j <= 3; j++) {
+//                System.out.println("i: " + i + ", j: " + j);
+//                if (i == 2 && j == 2) {
+//                    break outer; // Exits the outer loop
+//                }
+//            }
+//        }
+//        System.out.println("Exited the outer loop.");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+//            for(int i=1;i<=10;i++){
+//                if(i==5){
+//                    break;
+//                }
+//                System.out.println(i);
+//
+//            }
+
+//        outer:
+        for (int i = 1; i <= 3; i++) {
+            for (int j = 1; j <= 3; j++) {
+                if (i == 2 && j == 2) {
+                    break;                }
+                System.out.println("i: " + i + ", j: " + j);
+            }
         }
+        System.out.println("Completed all iterations.");
     }
+
 }

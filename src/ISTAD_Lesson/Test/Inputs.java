@@ -1,4 +1,4 @@
-package ISTAD_Lesson;
+package ISTAD_Lesson.Test;
 
 import java.util.Scanner;
 

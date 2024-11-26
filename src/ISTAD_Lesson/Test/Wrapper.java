@@ -1,4 +1,4 @@
-package ISTAD_Lesson;
+package ISTAD_Lesson.Test;
 public  class Wrapper {
     public static void main(String[] args){
         //object Integer for using with methods
