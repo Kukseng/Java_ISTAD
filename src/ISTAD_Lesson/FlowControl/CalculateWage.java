@@ -2,6 +2,8 @@ package ISTAD_Lesson.FlowControl;
 
 import java.util.Scanner;
 
+
+
 public class CalculateWage {
     static final int rate = 4100;
     public static void main(String[] args) {
@@ -45,7 +47,7 @@ public class CalculateWage {
                     };
 
                     System.out.println("=======================");
-                    System.out.println("Hour is : " + hour + (hour >= 1 ? ("hrs") : ("hr")));
+                    System.out.println("Hour is : " + hour + (hour >= 2 ? ("hrs") : ("hr")));
                     System.out.println("Wage is : " + wage + "$/1hrs");
                     System.out.println("Day of work : " + day);
 //                    System.out.println("Result is : " + (switch (enumDay) {S
@@ -61,33 +63,28 @@ public class CalculateWage {
                     float dollar;
                     float riel;
                     System.out.println("--------------<<<Money Exchange>>>-------------");
-                    System.out.println("1. Exchange dollar");
-                    System.out.println("2. Exchange ");
-                    System.out.println("Choose (1 - 2) : ");
-                    System.out.println("Enter dollar Option: ");
+                    System.out.println("1. Exchange Dollar to Riel");
+                    System.out.println("2. Exchange Riel to Dollar");
+                    System.out.print("Choose (1 - 2): ");
                     option1 = input.nextInt();
 
-                        switch (option1) {
-                            case 1 -> {
-                                System.out.println("Enter reil: ");
-                                riel = input.nextFloat();
-                                System.out.println("Exchange to dollar$: " +riel / rate);
-                            }
-                            case 2 -> {
-                                System.out.println("Enter  riel: ");
-                                dollar = input.nextFloat();
-                                System.out.println("Exchange to riel$: " +dollar / rate);
-                            }
-                            default -> {
-                                System.out.println("Exchange");
-                            }
+                    switch (option1) {
+                        case 1 -> {
+                            System.out.print("Enter dollar amount: ");
+                            dollar = input.nextFloat();
+                            System.out.println("Exchange to Riel: " + dollar * rate);
                         }
+                        case 2 -> {
+                            System.out.print("Enter riel amount: ");
+                            riel = input.nextFloat();
+                            System.out.println("Exchange to Dollar: " + riel / rate);
 
-                }
-                break;
-                default:
-                    System.out.println("Invalid option!! Try again!");
+                        }
+                        default -> System.out.println("Invalid option! Please choose 1 or 2.");
+                    }
                     break;
+                }
+
             }
         } while (option != 5);
 
@@ -95,4 +92,3 @@ public class CalculateWage {
 
 
 }
-
