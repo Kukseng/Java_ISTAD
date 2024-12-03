@@ -15,3 +15,8 @@ public class arrAssign {
         System.out.println("Updated ArrayList: " + colors);
     }
 }
+
+
+
+
+
