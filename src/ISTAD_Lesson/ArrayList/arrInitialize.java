@@ -75,6 +75,7 @@ public class arrInitialize {
 //        for(int i : arr1){
 //            System.out.println(i);
 //        }
+//        search binary
         int[] numbers = {1, 3, 5, 8, 9};
         int key = 7;	// Perform binary search
 int result = Arrays.binarySearch(numbers, key);
