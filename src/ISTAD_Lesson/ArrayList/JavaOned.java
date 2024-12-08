@@ -4,15 +4,13 @@ import java.util.Scanner;
 public class JavaOned {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n; // number of student
+        int n;
         System.out.println("Enter the number of student : ");
         n = scanner.nextInt();
 
-        // int scores = new int[1];
+
         int[] scores = new int[n];
 
-        // input score for all the student
-        // 5 elements -> 0 , 1, 2 ,.., last element = (length -1 )
         for (int i = 0; i < n; i++) {
             System.out.println("Enter score " + (i + 1) + ": ");
             scores[i] = scanner.nextInt();

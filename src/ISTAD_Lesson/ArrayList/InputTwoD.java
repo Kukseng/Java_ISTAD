@@ -13,12 +13,13 @@ public class InputTwoD {
         int[][] arr = new int[rows][cols];
         for (int i = 0; i < rows; i++){
             for(int j =0; j<cols; j++){
-                int index = i*cols+j;
+                int index = ++i;
 
                 System.out.println("Enter the "+(index)+"th element: ");
                 arr[i][j] = sc.nextInt();
             }
         }
+        System.out.println("List of elemnts: ");
         System.out.println(Arrays.deepToString(arr));
 
 
