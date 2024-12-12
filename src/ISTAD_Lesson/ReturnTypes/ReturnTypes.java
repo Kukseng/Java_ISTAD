@@ -6,7 +6,10 @@ public class ReturnTypes {
 //    }
     public void inputVagars(int... numbers) {
         for (int number : numbers){
-            System.out.println(number);
+            int number1 =0;
+            number1 += number;
+            System.out.println(number1);
+
         }
 
     }

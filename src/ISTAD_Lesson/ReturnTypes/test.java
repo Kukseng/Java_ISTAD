@@ -1,21 +1,29 @@
 package ISTAD_Lesson.ReturnTypes;
 
 public class test {
-
-//    static int factorial(int n) {
-//        if (n !=0)
-//            return n*factorial(n-1);
-//        else
-//            return 1;
+    //    static  void Parameter(String name, int... list){
+//        System.out.println(name);
 //    }
-//
-//    public static void main(String[] args) {
-//        int number =5, result;
-//        result= factorial(number);
-//        System.out.println(number + "Factorail: " + result);
-//    }
+    public void inputVagars(int... numbers) {
+        for (int number : numbers){
+            int number1 =0;
+            number1 += number;
 
+
+        }
+
+    }
+
+    //    public    int getNumber() {
+//        return 42;
+//    }
     public static void main(String[] args) {
-        System.out.println(Math.sqrt(9));
+//        ReturnTypes num = new ReturnTypes();
+//        int number = num.getNumber();
+//        System.out.println(number);
+//        Parameter("test");
+        ReturnTypes rt = new ReturnTypes();
+        rt.inputVagars(5,4,3,5,2);
+
     }
 }
